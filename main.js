@@ -32,6 +32,11 @@ window.onload = () => {
             document.removeEventListener('touchend', stopDrag);
             setInitialPosition()
         }
+
+        function setInitialPosition() {
+            stick.style.left = `${panel.offsetWidth/2-stick.offsetWidth/2}px`
+            stick.style.top = `${panel.offsetHeight/2-stick.offsetHeight/2}px`
+        }
     
         function setPosition(panelW, panelH, x, y, stick) {
             var offsetX = x - stick.offsetWidth / 2;
@@ -54,10 +59,7 @@ window.onload = () => {
             }
             return null;
         }
-        function setInitialPosition() {
-            stick.style.left = `${panel.offsetWidth/2-stick.offsetWidth/2}px`
-            stick.style.top = `${panel.offsetHeight/2-stick.offsetHeight/2}px`
-        }
+        
     }
     
     makeStickDraggable('move', 'move__stick');
