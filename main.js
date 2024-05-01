@@ -3,6 +3,7 @@ window.onload = () => {
         const panel = document.getElementById(panelId);
         const stick = document.getElementById(stickId);
     
+        setInitialPosition()
         stick.addEventListener('touchstart', startDrag);
     
         function startDrag(e) {
@@ -29,6 +30,7 @@ window.onload = () => {
         function stopDrag() {
             document.removeEventListener('touchmove', dragStick);
             document.removeEventListener('touchend', stopDrag);
+            setInitialPosition()
         }
     
         function setPosition(panelW, panelH, x, y, stick) {
@@ -51,6 +53,10 @@ window.onload = () => {
                 }
             }
             return null;
+        }
+        function setInitialPosition() {
+            stick.style.left = `${panel.offsetWidth/2-stick.offsetWidth/2}px`
+            stick.style.top = `${panel.offsetHeight/2-stick.offsetHeight/2}px`
         }
     }
     
