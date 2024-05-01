@@ -13,10 +13,13 @@
     <div class="container">
         <header class="header">
             <div class="header__wrapper">
+                <!-- Индикаторы состояния скорости и пройденного расстояния -->
                 <div class="header-indicators">
                     <p class="header-indicators__item">0.1 m/s</p>
                     <p class="header-indicators__item">20 cm</p>
                 </div>
+
+                <!-- Индикаторы состояния сети и батареи -->
                 <div class="header-indicators">
                     <div class="header-indicators__item">
                         <svg class="header-indicators__signal" version="1.1"
@@ -36,13 +39,17 @@
                             <rect x="2.5" y="2.5" width="17" height="11" fill="white"/>
                             <rect x="2.5" y="2.5" width="11" height="11" fill="white"/>
                             <rect x="2.5" y="2.5" width="5" height="11" fill="white"/>
-                            </svg>
-                            
+                        </svg>
                     </div>
                 </div>
             </div>
+
         </header>
+
+        <!-- Элемент для передачи картинки -->
         <img src="./1666364979_14-mykaleidoscope-ru-p-krasivie-peizazhi-prirodi-oboi-17.jpg" alt="photo">
+
+        <!-- Панель управления движением  -->
         <div id="move" class="panel move">
             <div class="panel__wrapper">
                 <div id="move__stick" class="panel__stick move__stick"></div>
@@ -60,6 +67,8 @@
                 <svg class="panel__arrow panel__right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.01 512.01" width="800px" height="800px"><g xmlns="http://www.w3.org/2000/svg" transform="matrix(0 1 -1 0 512.01 -0)"><g>	<g>		<path d="M505.755,358.256L271.088,123.589c-8.341-8.341-21.824-8.341-30.165,0L6.256,358.256c-8.341,8.341-8.341,21.824,0,30.165    s21.824,8.341,30.165,0l219.584-219.584l219.584,219.584c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251    C514.096,380.08,514.096,366.597,505.755,358.256z" />	</g></g></g></svg>
             </div>
         </div>
+
+        <!-- Панель упарвления камерой -->
         <div id="camera" class="panel camera">
             <div class="panel__wrapper">
                 <div id="camera__stick" class="panel__stick camera__stick">
