@@ -3,8 +3,8 @@ window.onload = () => {
         const panel = document.getElementById(panelId);
         const stick = document.getElementById(stickId);
     
-        setInitialPosition()
         stick.addEventListener('touchstart', startDrag);
+        setInitialPosition()
     
         function startDrag(e) {
             e.preventDefault(); 
