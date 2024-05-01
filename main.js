@@ -6,7 +6,7 @@ window.onload = () => {
         stick.addEventListener('touchstart', startDrag);
     
         function startDrag(e) {
-            e.preventDefault();
+            e.preventDefault(); 
             document.addEventListener('touchmove', dragStick);
             document.addEventListener('touchend', stopDrag);
         }
