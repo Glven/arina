@@ -4,12 +4,12 @@ window.onload = () => {
         const stick = document.getElementById(stickId);
     
         stick.addEventListener('touchstart', startDrag);
-        setInitialPosition()
     
         function startDrag(e) {
             e.preventDefault(); 
             document.addEventListener('touchmove', dragStick);
             document.addEventListener('touchend', stopDrag);
+            setInitialPosition()
         }
     
         function dragStick(e) {
