@@ -14,13 +14,22 @@
     &-indicators
         display: flex
         align-items: center
+        padding: 10px 0
+        &:first-child
+            margin-left: 5rem
+        &:last-child
+            margin-right: 9rem
         &__item
-            padding: 10px 0
             font-size: 1.8rem
             font-weight: 700
             color: $grey_1_str
             margin: 0 10px
+            position: relative
         &__signal
             width: 24px
             height: 16px
             fill: $grey_1_str
+        &__charge
+            position: absolute
+            left: 0
+            top: 0

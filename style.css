@@ -77,18 +77,30 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 0;
+}
+.header-indicators:first-child {
+  margin-left: 5rem;
+}
+.header-indicators:last-child {
+  margin-right: 9rem;
 }
 .header-indicators__item {
-  padding: 10px 0;
   font-size: 1.8rem;
   font-weight: 700;
   color: #fff;
   margin: 0 10px;
+  position: relative;
 }
 .header-indicators__signal {
   width: 24px;
   height: 16px;
   fill: #fff;
+}
+.header-indicators__charge {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 html {
@@ -114,8 +126,8 @@ html {
 .panel {
   position: absolute;
   bottom: 5%;
-  width: 16rem;
-  height: 16rem;
+  width: 20rem;
+  height: 20rem;
   border: 2px solid #fffcfc;
   z-index: 3;
   background: rgba(0, 0, 0, 0.5);
@@ -130,14 +142,14 @@ html {
   position: absolute;
   z-index: 5;
   fill: #fff;
-  width: 12px;
-  height: 7px;
+  width: 30px;
+  height: 22px;
 }
 .panel__stick {
   position: absolute;
   z-index: 7;
-  width: 40px;
-  height: 40px;
+  width: 8rem;
+  height: 8rem;
   background: rgba(217, 217, 217, 0.5);
   border: 1px solid #fff;
   border-radius: 50%;
